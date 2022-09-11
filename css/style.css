@@ -29,6 +29,7 @@ nav a {
 
 nav a:any-link {
 	text-decoration: none;
+	color:rgb(95, 31, 156);
 }
 
 nav a:hover {
