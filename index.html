@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cheat Sheet by Marina Pi</title>
+		<link href="./css/reset.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#tables">HTML Tables</a></li>
+					<li><a href="#other-tags">Other HTML Tags</a></li>
+					<li><a href="#selectors">CSS Selectors and Specificity</a></li>
+					<li><a href="#properties">Common CSS properties</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="banner">
+			<h1>Welcome to the Cheat Sheet!</h1>
+			<p>Prepared by Marina Pi</p>
+		</section>
+
+		<main>
+			<!-- Additional div used as a link target -->
+			<div id="tables"></div>
+					
+			<section>
+				<h2 class="blue">HTML Tables</h2>
+				<div class="blue-to-pink">
+					<h3>Table Tags</h3>
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Tag</th>
+								<th scope="col">Name</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">&lt;table&gt;</th>
+								<td>Table</td>
+								<td class="left">The wrapper element for all HTML tables.</td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;thead&gt;</th>
+								<td>Table Head</td>
+								<td class="left">The table section defining the column headers in a table.</td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;tbody&gt;</th>
+								<td>Table Body</td>
+								<td class="left">The table section containing actual table data.</td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;tr&gt;</th>
+								<td>Table Row</td>
+								<td class="left">The element defines a row of cells in a table</td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;th&gt;</th>
+								<td>Header Cell</td>
+								<td class="left">The element contains headers for both columns and rows</td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;td&gt;</th>
+								<td>Data Cell</td>
+								<td class="left">The element contains table data</td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;tfoot&gt;</th>
+								<td>Table Foot</td>
+								<td class="left">The table section defining the footer in a table.</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 class="add-pad">Table Attributes</h3>
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Attribute</th>
+								<th scope="col">Name</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">scope</th>
+								<td>Header Scope</td>
+								<td class="left">Defines if the header element &lt;th&gt; applied for column or row. May have two values:
+									"col"
+									or "row".</td>
+							</tr>
+							<tr>
+								<th scope="row">colspan</th>
+								<td>Column Span</td>
+								<td class="left">Defines how many columns a &lt;td&gt; element should span. May have only an integer
+									value.
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">rowspan</th>
+								<td>Row Span</td>
+								<td class="left">Defines how many rows a &lt;td&gt; element should span. May have only an integer value.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+					
+			<!-- Additional div used as a link target -->
+			<div id="other-tags"></div>
+			
+			<section>
+				<h2 class="pink">Other HTML Tags</h2>
+				<div class="pink-to-blue">
+					<h3>Basic Tags</h3>
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Tag</th>
+								<th scope="col">Name</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">&lt;html&gt;</th>
+								<td>Root Element</td>
+								<td class="left">This is the top-level element of an HTML document. All other elements must be within &lt;html&gt;element.</td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;head&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;body&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;title&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;link&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;p&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;a&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;ul&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;ol&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;li&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;div&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;span&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;strong&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">&lt;em&gt;</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+					
+			<!-- Additional div used as a link target -->
+			<div id="selectors"></div>
+					
+			<section>
+				<h2 class="blue">CSS Selectors and Specificity</h2>
+				<div class="blue-to-pink">
+					<h3>Basic Selectors</h3>
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Syntax</th>
+								<th scope="col">Name</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">*</th>
+								<td>Universal Selector</td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">elementname</th>
+								<td>Type Selector</td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">.classname</th>
+								<td>Class selector</td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">#idname</th>
+								<td>ID Selector</td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">[attr]</th>
+								<td>Attribute Selector</td>
+								<td class="left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+					
+			<!-- Additional div used as a link target -->
+			<div id="properties"></div>
+					
+			<section>
+				<h2 class="pink">Common CSS properties</h2>
+				<div class="pink-to-blue">
+					<h3>Text properties</h3>
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Property</th>
+								<th scope="col">Values</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">font-family</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">font-size</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">font-weight</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">line-height</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+							<tr>
+								<th scope="row">letter-spacing</th>
+								<td></td>
+								<td class="left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>Prepared and published by Marina Pi <br> marina.pi@gmail.com </p>
+		</footer>
+	</body>
+</html>
